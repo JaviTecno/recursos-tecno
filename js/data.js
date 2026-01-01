@@ -98,7 +98,14 @@ const DATOS = {
                 "digitalizacion": {
                     nombre: "Digitalización",
                     recursos: {
-                        presentaciones: [],
+                        presentaciones: [
+                            {
+                                titulo: "Unidad 3: Creación y gestión de bases de datos",
+                                archivo: "contenidos/4eso/Digitalización/Presentaciones/Presentación_Bases_de_datos_4eso.pdf",
+                                tipo: "PDF",
+                                fecha: "2024-09-15"
+                            }
+                        ],
                         apuntes: [],
                         actividades: [],
                         examenes: []
