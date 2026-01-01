@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursos de Tecnología | Prof. Javi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <span class="logo-icon">⚡</span>
+                <div class="logo-text">
+                    <span class="logo-title">TecnoRecursos</span>
+                    <span class="logo-subtitle">Prof. Javi</span>
+                </div>
+            </div>
+            <div class="header-actions">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Buscar recursos...">
+                    <span class="search-icon">🔍</span>
+                </div>
+                <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+                    <span class="theme-icon">🌙</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb navigation -->
+    <nav class="breadcrumb" id="breadcrumb">
+        <div class="breadcrumb-content">
+            <a href="#" class="breadcrumb-item active" data-level="home">
+                <span>🏠</span> Inicio
+            </a>
+        </div>
+    </nav>
+
+    <!-- Main content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Vista de Cursos (Home) -->
+            <section class="view active" id="view-home">
+                <h1 class="section-title">
+                    <span class="title-decoration"></span>
+                    Elige tu curso
+                </h1>
+                <div class="cards-grid">
+                    <article class="card card-curso" data-curso="1eso">
+                        <div class="card-icon">1°</div>
+                        <div class="card-content">
+                            <h2>1º ESO</h2>
+                            <p>Tecnología y Digitalización</p>
+                        </div>
+                        <span class="card-arrow">→</span>
+                    </article>
+                    <article class="card card-curso" data-curso="2eso">
+                        <div class="card-icon">2°</div>
+                        <div class="card-content">
+                            <h2>2º ESO</h2>
+                            <p>Tecnología y Digitalización</p>
+                        </div>
+                        <span class="card-arrow">→</span>
+                    </article>
+                    <article class="card card-curso" data-curso="3eso">
+                        <div class="card-icon">3°</div>
+                        <div class="card-content">
+                            <h2>3º ESO</h2>
+                            <p>Tecnología y Digitalización</p>
+                        </div>
+                        <span class="card-arrow">→</span>
+                    </article>
+                    <article class="card card-curso" data-curso="4eso">
+                        <div class="card-icon">4°</div>
+                        <div class="card-content">
+                            <h2>4º ESO</h2>
+                            <p>Tecnología / Digitalización</p>
+                        </div>
+                        <span class="card-arrow">→</span>
+                    </article>
+                    <article class="card card-curso" data-curso="bach1">
+                        <div class="card-icon">B1</div>
+                        <div class="card-content">
+                            <h2>1º Bachillerato</h2>
+                            <p>TIC I / Programación</p>
+                        </div>
+                        <span class="card-arrow">→</span>
+                    </article>
+                    <article class="card card-curso" data-curso="bach2">
+                        <div class="card-icon">B2</div>
+                        <div class="card-content">
+                            <h2>2º Bachillerato</h2>
+                            <p>TIC II</p>
+                        </div>
+                        <span class="card-arrow">→</span>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Vista de Asignaturas -->
+            <section class="view" id="view-asignaturas">
+                <h1 class="section-title">
+                    <span class="title-decoration"></span>
+                    <span id="titulo-asignaturas">Asignaturas</span>
+                </h1>
+                <div class="cards-grid" id="grid-asignaturas">
+                    <!-- Se rellena dinámicamente -->
+                </div>
+            </section>
+
+            <!-- Vista de Tipos de Recurso -->
+            <section class="view" id="view-tipos">
+                <h1 class="section-title">
+                    <span class="title-decoration"></span>
+                    <span id="titulo-tipos">Tipos de recurso</span>
+                </h1>
+                <div class="cards-grid cards-grid-tipos" id="grid-tipos">
+                    <article class="card card-tipo" data-tipo="presentaciones">
+                        <div class="card-icon-tipo">📽️</div>
+                        <div class="card-content">
+                            <h2>Presentaciones</h2>
+                            <p>Diapositivas de clase</p>
+                        </div>
+                        <span class="card-arrow">→</span>
+                    </article>
+                    <article class="card card-tipo" data-tipo="apuntes">
+                        <div class="card-icon-tipo">📄</div>
+                        <div class="card-content">
+                            <h2>Apuntes</h2>
+                            <p>Documentación y teoría</p>
+                        </div>
+                        <span class="card-arrow">→</span>
+                    </article>
+                    <article class="card card-tipo" data-tipo="actividades">
+                        <div class="card-icon-tipo">✏️</div>
+                        <div class="card-content">
+                            <h2>Actividades</h2>
+                            <p>Ejercicios y prácticas</p>
+                        </div>
+                        <span class="card-arrow">→</span>
+                    </article>
+                    <article class="card card-tipo" data-tipo="examenes">
+                        <div class="card-icon-tipo">📝</div>
+                        <div class="card-content">
+                            <h2>Exámenes</h2>
+                            <p>Pruebas y evaluaciones</p>
+                        </div>
+                        <span class="card-arrow">→</span>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Vista de Recursos -->
+            <section class="view" id="view-recursos">
+                <h1 class="section-title">
+                    <span class="title-decoration"></span>
+                    <span id="titulo-recursos">Recursos</span>
+                </h1>
+                <div class="recursos-list" id="lista-recursos">
+                    <!-- Se rellena dinámicamente -->
+                </div>
+                <div class="empty-state" id="empty-state">
+                    <span class="empty-icon">📭</span>
+                    <p>Aún no hay recursos en esta sección</p>
+                    <span class="empty-hint">¡Pronto habrá contenido disponible!</span>
+                </div>
+            </section>
+
+            <!-- Vista de búsqueda -->
+            <section class="view" id="view-search">
+                <h1 class="section-title">
+                    <span class="title-decoration"></span>
+                    Resultados de búsqueda
+                </h1>
+                <div class="recursos-list" id="search-results">
+                    <!-- Se rellena dinámicamente -->
+                </div>
+                <div class="empty-state" id="search-empty">
+                    <span class="empty-icon">🔍</span>
+                    <p>No se encontraron resultados</p>
+                    <span class="empty-hint">Prueba con otros términos</span>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>Recursos de Tecnología · Curso 2024-2025</p>
+            <p class="footer-hint">Hecho con 💻 para mis alumnos</p>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
