@@ -73,7 +73,7 @@ const DATOS = {
             nombre: "3º ESO",
             asignaturas: {
                 "tecnologia": {
-                    nombre: "Tecnología y Digitalización",
+                    nombre: "Educación Digital",
                     recursos: {
                         presentaciones: [],
                         apuntes: [],
@@ -118,8 +118,8 @@ const DATOS = {
                         examenes: []
                     }
                 },
-                "programacion": {
-                    nombre: "Programación",
+                "tecnología_e_ingeniería_i": {
+                    nombre: "Tecnología_e_ingeniería_I",
                     recursos: {
                         presentaciones: [],
                         apuntes: [],
@@ -134,6 +134,15 @@ const DATOS = {
             asignaturas: {
                 "tic2": {
                     nombre: "TIC II",
+                    recursos: {
+                        presentaciones: [],
+                        apuntes: [],
+                        actividades: [],
+                        examenes: []
+                    }
+                },
+                "tecnología_e_ingeniería_ii": {
+                    nombre: "Tecnología_e_ingeniería_II",
                     recursos: {
                         presentaciones: [],
                         apuntes: [],
